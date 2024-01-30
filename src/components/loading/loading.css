@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .loading-container {
+    text-align: center;
+  }
+  
+  .wave {
+    font-size: 2rem;
+    animation: wave 1s infinite;
+  }
+  
+  .loading-text {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .dark-theme {
+    --color-primary: #00bcd4; /* Change this to your dark mode primary color */
+    --background-color: #121212; /* Change this to your dark mode background color */
+    --text-color: #ffffff; /* Change this to your dark mode text color */
+  }
+  
+  .app.dark-theme {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
